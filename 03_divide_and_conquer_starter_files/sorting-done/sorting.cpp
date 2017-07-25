@@ -15,6 +15,7 @@ void print(vector<int> v)
 void partition2(vector<int> &a, int l, int r, int &i, int &j) {
   int k;
   int middle=(l+r)/2;
+  
   /*Selecting pivot as median of low, high and middle*/
   if(((a[l]<=a[middle]) && (a[middle]<=a[r])) || ((a[r]<=a[middle]) && (a[middle]<=a[l])))
 	  k=middle;
